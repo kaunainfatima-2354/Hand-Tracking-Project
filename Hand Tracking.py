@@ -4,9 +4,6 @@ import numpy as np
 
 cap = cv2.VideoCapture(0)
 
-fourcc = cv2.VideoWriter_fourcc(*'XVID')
-out = cv2.VideoWriter('output.avi', fourcc, 20.0, (640, 280))
-
 
 while True:
     ret, frame = cap.read()
@@ -60,11 +57,9 @@ while True:
 
         cv2.imshow("contours", contour_frame)
 
-        out.write(frame)
-
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
 cap.release()
-out.release()
 cv2.destroyAllWindows()
+
