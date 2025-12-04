@@ -27,3 +27,6 @@ This project is a simple real-time computer vision script built with OpenCV that
 9. Select the topmost point of the hull as the fingertip.
 10. Measure distance between fingertip and a fixed point.
 11. Display relevant warnings based on that distance.
+
+
+Lastly, it saves the captured video
